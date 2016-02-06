@@ -1,0 +1,18 @@
+/*
+
+Given an array of ints length 3, return a new array with the elements in reverse order, 
+so {1, 2, 3} becomes {3, 2, 1}.
+*/
+
+
+public int[] reverse3(int[] nums) {
+// create a new array and assign it the length of the given array
+  int[] value = new int[nums.length];
+  // use the for loop to get the reverse
+  for(int count =0; count < nums.length;count++)
+    value[count] = nums[nums.length- 1 -count];
+   //end of for loop
+    
+  return value;
+   
+}
